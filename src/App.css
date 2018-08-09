@@ -1,0 +1,36 @@
+.container {
+  border-color: gray;
+  border-style: dotted;
+  border-width: 3px;
+}
+
+.div--app {
+  margin: 2.5%;
+  border-color: #e3e6ea;
+  border-style: dotted;
+  border-width: 3px;
+}
+
+.div--content-container {
+
+}
+
+.div--index-container {
+
+}
+
+.div--art-card {
+  border-color: yellow;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.div--search-bar {
+  border-color: cyan;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.div--art-list-container {
+
+}
