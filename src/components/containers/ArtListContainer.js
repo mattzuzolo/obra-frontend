@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import ArtCard from "../ArtCard"
+// import ArtCard from "../ArtCard"
 
 class ArtListContainer extends Component {
 
@@ -8,7 +8,7 @@ class ArtListContainer extends Component {
   render(){
     return(
       <div className="container div--art-list-container">
-        
+
       </div>
     )
   }
