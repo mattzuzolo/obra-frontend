@@ -14,8 +14,8 @@ function reducer (state = initialState, action) {
       return {...state, count: state.count - 1, somethingElse: "newer"}
     case ADD_FRIEND:
       return {...state, friendsArray: [...state.friendsArray, action.payload]}
-    // case UPDATE_ARTWORK_ACTION:
-    //   return {...state, artworkArray: [...state.artworkArray, action.payload]}
+    case UPDATE_ARTWORK_ACTION:
+      return {...state, artworkArray: [...state.artworkArray, action.payload]}
     case ARTWORK_FETCH_SUCCESSFUL:
       return {...state, artworkArray: [...state.artworkArray, action.payload]}
     default:

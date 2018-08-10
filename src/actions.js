@@ -1,5 +1,5 @@
 
-import { UPDATE_ARTWORK_ACTION, ARTWORK_FETCH_SUCCESSFUL } from './types';
+import { ARTWORK_FETCH_SUCCESSFUL } from './types';
 
 export function incrementAction() {
   return { type: 'INCREMENT' }
