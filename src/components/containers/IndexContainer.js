@@ -31,7 +31,7 @@ class IndexContainer extends Component {
   }
 
   render(){
-    console.log("State at render", this.state);
+    // console.log("State at render", this.state);
     return(
       <div className="container div--index-container">
         <form onSubmit={this.handleFormSubmit}>
@@ -53,7 +53,6 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch){
-  // dispatch();
   return {
     fetchData: (url) => dispatch(artworkFetch(url)),
   }

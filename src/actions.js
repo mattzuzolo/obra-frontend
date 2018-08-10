@@ -25,10 +25,10 @@ export function setCountAction(count) {
 
 export function artworkFetch(url) {
     return (dispatch) => {
+
       return fetch(url)
             .then((response) => response.json())
-            .then((artworkArray) => {
-              dispatch({type: ARTWORK_FETCH_SUCCESSFUL, payload: artworkArray})
-            })
+            .then((artworkArray) => { dispatch({type: ARTWORK_FETCH_SUCCESSFUL, payload: artworkArray}) })
+
     }
 }
