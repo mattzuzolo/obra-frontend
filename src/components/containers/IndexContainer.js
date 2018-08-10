@@ -11,6 +11,7 @@ class IndexContainer extends Component {
   render(){
     return(
       <div className="container div--index-container">
+        INDEX HERE
         <ArtListContainer />
       </div>
     )
