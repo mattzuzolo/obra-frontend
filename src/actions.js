@@ -2,14 +2,14 @@
 import { ARTWORK_FETCH_SUCCESSFUL } from './types';
 
 export function artworkFetch(url) {
-    return (dispatch) => {
-      return fetch(url)
-            .then(response => response.json())
-            .then(artworkArray => {
-        dispatch({type: ARTWORK_FETCH_SUCCESSFUL, payload: artworkArray})
-      })
+  return (dispatch) => {
+    return fetch(url)
+      .then(response => response.json())
+      // .then( artworkArray => console.log({type: ARTWORK_FETCH_SUCCESSFUL, payload: artworkArray}) ) //action displays on console.log
+      .then( artworkArray => dispatch({type: ARTWORK_FETCH_SUCCESSFUL, payload: artworkArray}));
     }
 }
+
 
 
 

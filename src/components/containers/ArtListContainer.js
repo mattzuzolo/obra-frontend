@@ -39,7 +39,6 @@ class ArtListContainer extends Component {
   }
 
   render(){
-    // console.log("ArtListContainer state at render: ", this.state.tempArray)
     return(
       <div className="container div--art-list-container">
         {this.state.tempArray.map(individualCard => (
