@@ -3,11 +3,8 @@ import { Route, Switch, withRouter } from 'react-router-dom';
 
 // import { connect } from 'react-redux';
 
-// import ContentContainer from "./components/containers/ContentContainer"
 import AnnotationContainer from "./components/containers/AnnotationContainer"
 import IndexContainer from "./components/containers/IndexContainer"
-// import HomeContainer from "./components/containers/HomeContainer"
-// import UserContainer from "./components/containers/UserContainer"
 import NavBar from "./components/NavBar"
 
 import './App.css';

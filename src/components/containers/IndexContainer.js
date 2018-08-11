@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-// import uuid from "uuid";
 import { connect } from 'react-redux';
-// import SearchBar from "../SearchBar"
 import ArtListContainer from "../containers/ArtListContainer"
-// import ArtCard from "../ArtCard"
 import { artworkFetch } from "../../actions"
 
 class IndexContainer extends Component {
@@ -16,6 +13,11 @@ class IndexContainer extends Component {
     }
   }
 
+  componentDidMount() {
+    this.props.fetchData("http://localhost:4000/artwork");
+    // this.props.fetchData("https://agile-anchorage-40481.herokuapp.com/artwork");
+  }
+
   onQueryChange = (event) => {
     this.setState({ activeQuery: event.target.value })
   }
@@ -26,9 +28,6 @@ class IndexContainer extends Component {
     this.setState({submittedQuery});
   }
 
-  componentDidMount() {
-    this.props.fetchData("http://localhost:4000/artwork");
-  }
 
   render(){
     // console.log("State at render", this.state);
