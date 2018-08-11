@@ -30,7 +30,7 @@ class IndexContainer extends Component {
 
 
   render(){
-    // console.log("State at render", this.state);
+    console.log("this.props in index", this.props);
     return(
       <div className="container div--index-container">
         <form onSubmit={this.handleFormSubmit}>
